@@ -8,9 +8,9 @@ ARG PUID=844
 ARG PGID=844
 
 ENV OUTPUT=/blockmap/output \
-	INPUT_OVERWORLD=/blockmap/input/region \
-	INPUT_NETHER=/blockmap/input/DIM1/region \
-	INPUT_END=/blockmap/input/DIM-1/region \
+	INPUT_OVERWORLD=/blockmap/input/overworld \
+	INPUT_NETHER=/blockmap/input/nether/ \
+	INPUT_END=/blockmap/input/end/ \
 	VERSION=1.4.0 \
 	SHA1=6b51f4d3d23094da2820d9461036a618c2933083
 

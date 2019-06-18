@@ -18,13 +18,13 @@ This image can be used to render a Minecraft map, by just mounting the world fol
 ### Quick Start
 
 *Please **replace the paths** on the left side with your own!*  
-*They should all point to a directory, where the region files are located (files like **r.0.0.mca**)*
+*They should all point to a directory, where the region files are located (files like **r.0.0.mca**) or if you want all data to be processed, the parent folder (usually where the 'region') folder lives in.*
 
 ```
 sudo docker run -d \
-	-v /MY-MINECRAFT-PATH/world/region:/blockmap/input/region/ \
-	-v /MY-MINECRAFT-PATH/world_nether/:/blockmap/input/DIM1/ \
-	-v /MY-MINECRAFT-PATH/world_the_end/:/blockmap/input/DIM-1/ \ 
+	-v /MY-MINECRAFT-PATH/world/:/blockmap/input/overworld/ \
+	-v /MY-MINECRAFT-PATH/world_nether/:/blockmap/input/nether/ \
+	-v /MY-MINECRAFT-PATH/world_the_end/:/blockmap/input/end/ \ 
 	-v /MY-OUTPUT-PATH/output:/opt/blockmap/output \
 	--name blockmap \
 	saibotk/blockmap
