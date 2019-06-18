@@ -12,7 +12,7 @@ ENV OUTPUT=/blockmap/output \
 	INPUT_NETHER=/blockmap/input/DIM1/region \
 	INPUT_END=/blockmap/input/DIM-1/region \
 	VERSION=1.4.0 \
-	SHA1=cada13d8c9bba4a8dd1ed3017fd04a4a03695ca3
+	SHA1=6b51f4d3d23094da2820d9461036a618c2933083
 
 RUN mkdir -p /opt/blockmap /blockmap && \
 	apk add --update --no-cache su-exec binutils gettext libintl && \
