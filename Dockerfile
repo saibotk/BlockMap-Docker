@@ -11,7 +11,7 @@ ENV OUTPUT=/blockmap/output \
 	INPUT_OVERWORLD=/blockmap/input/region \
 	INPUT_NETHER=/blockmap/input/DIM1/region \
 	INPUT_END=/blockmap/input/DIM-1/region \
-	VERSION=1.3.0 \
+	VERSION=1.4.0 \
 	SHA1=cada13d8c9bba4a8dd1ed3017fd04a4a03695ca3
 
 RUN mkdir -p /opt/blockmap /blockmap && \
@@ -24,7 +24,7 @@ RUN mkdir -p /opt/blockmap /blockmap && \
 	ln -s $INPUT_NETHER /opt/blockmap/nether && \
 	ln -s $INPUT_END /opt/blockmap/end && \
 	ln -s $OUTPUT /opt/blockmap/output && \
-	apk del .build-deps && \
+	apk del .build-deps curl && \
 	addgroup -g $PGID -S $GROUP && \
 	adduser -u $PUID -G $GROUP -s /bin/sh -SDH $USER && \
 	chown -R $USER:$GROUP /opt/blockmap /blockmap

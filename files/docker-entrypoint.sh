@@ -21,21 +21,21 @@ ls -l /opt/blockmap
 # A simple and plain overworld view
 echo "[INFO] Rendering overworld..."
 mkdir -p $OUTPUT_DIR/overworld
-java -jar $BLOCKMAP_FILE -v render -l -o=$OUTPUT_DIR/overworld $WORLD_FOLDER_OVERWORLD save --world-name="Overworld" --file="$OUTPUT_DIR/rendered.json"
+java -jar $BLOCKMAP_FILE -v render -l -o=$OUTPUT_DIR/overworld $WORLD_FOLDER_OVERWORLD
 # The ocean grounds of the overworld
 echo "[INFO] Rendering overworld_ocean..."
 mkdir -p $OUTPUT_DIR/overworld_ocean
-java -jar $BLOCKMAP_FILE -v render -l -o=$OUTPUT_DIR/overworld_ocean -c=OCEAN_GROUND $WORLD_FOLDER_OVERWORLD save --world-name="Overworld (Ocean)" --file="$OUTPUT_DIR/rendered.json"
+java -jar $BLOCKMAP_FILE -v render -l -o=$OUTPUT_DIR/overworld_ocean -c=OCEAN_GROUND $WORLD_FOLDER_OVERWORLD
 # All caves up to height 30
 echo "[INFO] Rendering overworld_cave..."
 mkdir -p $OUTPUT_DIR/overworld_cave
-java -jar $BLOCKMAP_FILE -v render -l -o=$OUTPUT_DIR/overworld_cave -c=CAVES --max-height=30 $WORLD_FOLDER_OVERWORLD save --world-name="Overworld (Cave)" --file="$OUTPUT_DIR/rendered.json"
+java -jar $BLOCKMAP_FILE -v render -l -o=$OUTPUT_DIR/overworld_cave -c=CAVES --max-height=30 $WORLD_FOLDER_OVERWORLD
 # The nether up to height 64
 echo "[INFO] Rendering overworld_nether..."
 mkdir -p $OUTPUT_DIR/overworld_nether
-java -jar $BLOCKMAP_FILE -v render -l -o=$OUTPUT_DIR/nether --max-height=64 $WORLD_FOLDER_NETHER save --world-name="Nether" --file="$OUTPUT_DIR/rendered.json"
+java -jar $BLOCKMAP_FILE -v render -l -o=$OUTPUT_DIR/nether --max-height=64 $WORLD_FOLDER_NETHER
 # A plain view of the end
 echo "[INFO] Rendering overworld_end..."
 mkdir -p $OUTPUT_DIR/overworld_end
-java -jar $BLOCKMAP_FILE -v render -l -o=$OUTPUT_DIR/end $WORLD_FOLDER_END save --world-name="End" --file="$OUTPUT_DIR/rendered.json"
+java -jar $BLOCKMAP_FILE -v render -l -o=$OUTPUT_DIR/end $WORLD_FOLDER_END
 echo "[INFO] Rendering finished!"
