@@ -4,6 +4,6 @@ set -e
 
 echo "[INFO] Start rendering..."
 
-java -jar /opt/blockmap/blockmap.jar render-many /config.json
+java -jar /opt/blockmap/blockmap.jar render-many /config.json $@
 
 echo "[INFO] Rendering finished!"
