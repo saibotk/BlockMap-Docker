@@ -21,15 +21,12 @@ This image can be used to render a Minecraft map, by just mounting the world fol
 *They should all point to a directory, where the region files are located (files like **r.0.0.mca**) or if you want all data to be processed, the parent folder (usually where the 'region') folder lives in.*
 
 ```
-sudo docker run -d \
-	-v /MY-MINECRAFT-PATH/world/:/blockmap/input/overworld/ \
-	-v /MY-MINECRAFT-PATH/world_nether/:/blockmap/input/nether/ \
-	-v /MY-MINECRAFT-PATH/world_the_end/:/blockmap/input/end/ \ 
-	-v /MY-OUTPUT-PATH/output:/opt/blockmap/output \
+sudo docker run \
+	-v /MY-MINECRAFT-PATH/world:/input \
+	-v /MY-OUTPUT-PATH/output:/output \
 	--name blockmap \
 	saibotk/blockmap
 ```
 
-### BlockMap + Nginx setup
-
-*Coming soon...*
+### Customization
+Coming soon
