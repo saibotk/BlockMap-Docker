@@ -25,7 +25,7 @@
 			"input dir": "/input",
 			"dimension": "NETHER",
 			"render settings": {
-				"block colors": "CAVES_VIEW",
+				"block colors": "CAVES",
 				"shader": "RELIEF",
 				"maxY": "80"
 			},
