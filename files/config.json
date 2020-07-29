@@ -31,6 +31,13 @@
 			},
 			"force": false,
 			"pins": true
+		},
+		{
+			"name": "End",
+			"input dir": "/input",
+			"dimension": "END",
+			"force": false,
+			"pins": true
 		}
 	]
 }
