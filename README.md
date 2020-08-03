@@ -22,7 +22,7 @@ This image can be used to render a Minecraft map, by just mounting the world fol
 
 ```
 sudo docker run \
-	-v /MY-MINECRAFT-PATH/world:/input \
+	-v /MY-MINECRAFT-PATH/world:/input:ro \
 	-v /MY-OUTPUT-PATH/output:/output \
 	--name blockmap \
 	saibotk/blockmap

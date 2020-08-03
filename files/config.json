@@ -1,24 +1,11 @@
 {
 	"output dir": "/output",
-	"hide offline players": false,
 	"worlds": [
 		{
 			"name": "Overworld",
 			"input dir": "/input",
 			"dimension": "OVERWORLD",
-			"force": false,
-			"pins": true
-		},
-		{
-			"name": "Overworld/Oceans",
-			"input dir": "/input",
-			"dimension": "OVERWORLD",
-			"force": false,
-			"pins": true,
-			"render settings": {
-				"block colors": "OCEAN_GROUND",
-				"shader": "RELIEF"
-			}
+			"force": false
 		},
 		{
 			"name": "Nether",
@@ -29,15 +16,13 @@
 				"shader": "RELIEF",
 				"maxY": "80"
 			},
-			"force": false,
-			"pins": true
+			"force": false
 		},
 		{
 			"name": "End",
 			"input dir": "/input",
 			"dimension": "END",
-			"force": false,
-			"pins": true
+			"force": false
 		}
 	]
 }
