@@ -1,7 +1,7 @@
 FROM docker.io/library/openjdk:14-alpine
 
-ENV VERSION=2.2.0 \
-	SHA1=bcb3a1eec9deddc77e2ed2d4df1b402fa6432beb
+ENV VERSION=2.2.1 \
+	SHA1=c4ae4900d2b0dbc0744cfde21f5120cdd5c4ae8f
 
 RUN mkdir -p /opt/blockmap /input /output && \
 	apk add --update --no-cache su-exec binutils gettext libintl && \
