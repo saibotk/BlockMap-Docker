@@ -1,4 +1,4 @@
-FROM docker.io/library/openjdk:14-alpine
+FROM docker.io/library/openjdk:17-alpine
 
 ENV VERSION=2.2.1 \
 	SHA1=c4ae4900d2b0dbc0744cfde21f5120cdd5c4ae8f
