@@ -13,6 +13,8 @@ package:
   image: quay.io/sheogorath/build-ah-engine:latest
   variables:
     LANG: C.UTF-8
+  tags:
+    - privileged
   before_script:
     - podman login -u "$CI_REGISTRY_USER" -p "$CI_REGISTRY_PASSWORD" $CI_REGISTRY
   script:
