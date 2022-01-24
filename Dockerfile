@@ -1,4 +1,4 @@
-FROM docker.io/library/openjdk:17-alpine
+FROM docker.io/library/openjdk:18-alpine
 
 ENV VERSION=2.3.0
 ENV SHA1=c9bb6395a8d920dd0ce39ff985325390061c6ea2
